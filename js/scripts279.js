@@ -3,7 +3,7 @@ const responses = JSON.parse(localStorage.getItem('response'));
 const handleGetResponses = () => {
     const count = responses.length;
 
-    if (count < 9) {
+    if (count < 8) {
         document.querySelector('.intentelo').style.display = 'block';
         document.querySelector('.felicida').style.display = 'none';
         handleSetRemove()
@@ -35,7 +35,7 @@ window.addEventListener('DOMContentLoaded', () => {
     handleGetResponses();
 
     document.querySelector('.boton-next').addEventListener('click', () => {
-        if (responses.length === 9)
+        if (responses.length >= 8)
             window.location.href = './index280.html'
         else
             window.location.href = './index275.html';

@@ -27,7 +27,9 @@ $(document).ready(function () {
 	$('#car-1').on('click', () => {
 		$('#car-1 rect').css('fill', '#50e1d0')
 
-		localStorage.setItem('response', JSON.stringify([1]))
+		const response = JSON.parse(localStorage.getItem('response'))
+
+		localStorage.setItem('response', JSON.stringify([...response, 1]))
 
 		setTimeout(() => {
 			$('.modal').hide()
