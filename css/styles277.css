@@ -1,0 +1,213 @@
+@font-face {
+	font-family: volta_modern_display_45_light;
+	src: url('../fonst/volta_modern_display_45_light.otf');
+}
+@font-face {
+	font-family: volta_modern_display_55_roman;
+	src: url('../fonst/volta_modern_display_55_roman.otf');
+}
+@font-face {
+	font-family: volta_modern_display_56_italic;
+	src: url('../fonst/volta_modern_display_56_italic.otf');
+}
+@font-face {
+	font-family: volta_modern_display_65_medium;
+	src: url('../fonst/volta_modern_display_65_medium.otf');
+}
+@font-face {
+	font-family: volta_modern_display_75_bold;
+	src: url('../fonst/volta_modern_display_75_bold.otf');
+}
+
+body {
+	margin: 0;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #000;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.container .cover-image {
+	width: auto;
+	height: 100vh;
+}
+
+.boton-next {
+	position: absolute;
+	width: 6%;
+	height: 10%;
+	top: 86%;
+	right: 2%;
+	cursor: pointer;
+}
+
+.boton-atras {
+	position: absolute;
+	width: 6%;
+	height: 10%;
+	position: absolute;
+	width: 6%;
+	cursor: pointer;
+}
+
+.personaje1 {
+	position: absolute;
+	width: 20.6%;
+	top: 32%;
+	left: 5.1%;
+}
+
+.personaje1 img {
+	width: 100%;
+	height: 100%;
+}
+
+/* modal 1 */
+.openModal {
+	position: absolute;
+	perspective: 100px;
+	transform-style: preserve-3d;
+	transition: all 0.5s linear;
+	width: 20.6%;
+	top: 32%;
+	left: 5.1%;
+	height: 56%;
+}
+
+.openModal .cara {
+	position: absolute;
+	backface-visibility: hidden;
+}
+
+.openModal .cara.frente {
+	width: 100%;
+	height: 100%;
+}
+
+.openModal .cara.detras {
+	width: 100%;
+	height: 100%;
+	transform: rotateY(180deg);
+}
+
+.openModal .cara.detras img {
+	width: 100%;
+	height: 100%;
+}
+
+.openModal .cara.frente img {
+	width: 100%;
+	height: 100%;
+}
+
+.modal img {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 300;
+	display: block;
+	left: 0%;
+	top: 0%;
+}
+
+.closeModal {
+	position: absolute;
+	width: 5%;
+	height: 10%;
+	z-index: 1000;
+	top: 87%;
+	right: 3%;
+	cursor: pointer;
+}
+
+.pregunta1 {
+	position: absolute;
+    width: 49.2%;
+    right: 5.3%;
+    top: 28.9%;
+    z-index: 300;
+    cursor: pointer;
+}
+
+.pregunta1 img {
+	width: 100%;
+	height: 100%;
+}
+
+.modalerror {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0%;
+	left: 0%;
+}
+
+.modalerror img {
+	width: 100%;
+	height: 100%;
+}
+
+.closeModalerror {
+	position: absolute;
+	width: 7%;
+	height: 12%;
+	top: 85%;
+    right: 2%;
+	z-index: 100;
+}
+/* modal 1 */
+
+/* Responsive */
+@media (max-width: 1365px) and (min-height: 768px) {
+	.container {
+		width: 100vw;
+		height: auto;
+	}
+
+	.container .cover-image {
+		width: auto;
+		height: 100vh;
+	}
+}
+
+@media (max-height: 767px) {
+	.container {
+		width: auto;
+		height: 100vh;
+	}
+}
+
+@media (min-height: 625px) and (max-height: 1280px) and (max-width: 1024px) {
+	.container {
+		width: 100vw;
+		height: auto;
+	}
+
+	.container .cover-image {
+		width: 100vw;
+		height: auto;
+	}
+}
+
+@media (max-height: 624px) and (max-width: 767px) {
+	.container {
+		width: 100vw;
+		height: auto;
+	}
+
+	.container .cover-image {
+		width: 100vw;
+		height: auto;
+	}
+}

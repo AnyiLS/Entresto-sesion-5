@@ -1,0 +1,291 @@
+/* modal 1 */
+.openModal2 {
+	position: absolute;
+	perspective: 100px;
+	transform-style: preserve-3d;
+	transition: all 0.5s linear;
+	width: 20.6%;
+	top: 32%;
+	left: 28.4%;
+	height: 56%;
+}
+
+.openModal2 .cara2 {
+	position: absolute;
+	backface-visibility: hidden;
+}
+
+.openModal2 .cara2.frente2 {
+	width: 100%;
+	height: 100%;
+}
+
+.openModal2 .cara2.detras2 {
+	width: 100%;
+	height: 100%;
+	transform: rotateY(180deg);
+}
+
+.openModal2 .cara2.detras2 img {
+	width: 100%;
+	height: 100%;
+}
+
+.openModal2 .cara2.frente2 img {
+	width: 100%;
+	height: 100%;
+}
+
+.modal2 img {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 300;
+	display: block;
+	left: 0%;
+	top: 0%;
+}
+
+.closeModal2 {
+	position: absolute;
+	width: 5%;
+	height: 10%;
+	z-index: 1000;
+	top: 87%;
+	right: 3%;
+	cursor: pointer;
+}
+
+.pregunta2 {
+	position: absolute;
+    width: 49.2%;
+    right: 5.3%;
+    top: 28.9%;
+    z-index: 300;
+    cursor: pointer;
+}
+
+.pregunta2 img {
+	width: 100%;
+	height: 100%;
+}
+
+.modalerror2 {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0%;
+	left: 0%;
+}
+
+.modalerror2 img {
+	width: 100%;
+	height: 100%;
+}
+
+.closeModalerror2 {
+	position: absolute;
+	width: 7%;
+	height: 12%;
+	top: 85%;
+    right: 2%;
+	z-index: 100;
+}
+/* modal 1 */
+
+
+/* modal 3 */
+.openModal3 {
+	position: absolute;
+	perspective: 100px;
+	transform-style: preserve-3d;
+	transition: all 0.5s linear;
+	width: 20.6%;
+	top: 32%;
+	left: 51.8%;
+	height: 56%;
+}
+
+.openModal3 .cara3 {
+	position: absolute;
+	backface-visibility: hidden;
+}
+
+.openModal3 .cara3.frente3 {
+	width: 100%;
+	height: 100%;
+}
+
+.openModal3 .cara3.detras3 {
+	width: 100%;
+	height: 100%;
+	transform: rotateY(180deg);
+}
+
+.openModal3 .cara3.detras3 img {
+	width: 100%;
+	height: 100%;
+}
+
+.openModal3 .cara3.frente3 img {
+	width: 100%;
+	height: 100%;
+}
+
+.modal3 img {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 300;
+	display: block;
+	left: 0%;
+	top: 0%;
+}
+
+.closeModal3 {
+	position: absolute;
+	width: 5%;
+	height: 10%;
+	z-index: 1000;
+	top: 87%;
+	right: 3%;
+	cursor: pointer;
+}
+
+.pregunta3 {
+	position: absolute;
+    width: 49.2%;
+    right: 5.3%;
+    top: 28.9%;
+    z-index: 300;
+    cursor: pointer;
+}
+
+.pregunta3 img {
+	width: 100%;
+	height: 100%;
+}
+
+.modalerror3 {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0%;
+	left: 0%;
+}
+
+.modalerror3 img {
+	width: 100%;
+	height: 100%;
+}
+
+.closeModalerror3 {
+	position: absolute;
+	width: 7%;
+	height: 12%;
+	top: 85%;
+    right: 2%;
+	z-index: 100;
+}
+/* modal 3 */
+
+/* modal 4 */
+.openModal4 {
+	position: absolute;
+	perspective: 100px;
+	transform-style: preserve-3d;
+	transition: all 0.5s linear;
+	width: 20.6%;
+	top: 32%;
+	right: 4.3%;
+	height: 56%;
+}
+
+.openModal4 .cara4 {
+	position: absolute;
+	backface-visibility: hidden;
+}
+
+.openModal4 .cara4.frente4 {
+	width: 100%;
+	height: 100%;
+}
+
+.openModal4 .cara4.detras4 {
+	width: 100%;
+	height: 100%;
+	transform: rotateY(180deg);
+}
+
+.openModal4 .cara4.detras4 img {
+	width: 100%;
+	height: 100%;
+}
+
+.openModal4 .cara4.frente4 img {
+	width: 100%;
+	height: 100%;
+}
+
+.modal4 img {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 300;
+	display: block;
+	left: 0%;
+	top: 0%;
+}
+
+.closeModal4 {
+	position: absolute;
+	width: 5%;
+	height: 10%;
+	z-index: 1000;
+	top: 87%;
+	right: 3%;
+	cursor: pointer;
+}
+
+.pregunta4 {
+	position: absolute;
+    width: 49.2%;
+    right: 5.3%;
+    top: 28.9%;
+    z-index: 300;
+    cursor: pointer;
+}
+
+.pregunta4 img {
+	width: 100%;
+	height: 100%;
+}
+
+.modalerror4 {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0%;
+	left: 0%;
+}
+
+.modalerror4 img {
+	width: 100%;
+	height: 100%;
+}
+
+.closeModalerror4 {
+	position: absolute;
+	width: 7%;
+	height: 12%;
+	top: 85%;
+    right: 2%;
+	z-index: 100;
+}
+/* modal 4 */

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Juego sesión 5 Entresto</title>
+
+	<link rel="stylesheet" href="./css/styles.css" />
+	<!-- Scripts -->
+	<script src="./js/jquery-3.2.1.min.js"></script>
+	<script src="./js/functions.js"></script>
+</head>
+
+<body class="ancho">
+	<div class="container">
+		<img src="./imagenes/portada275.webp" alt="Portada" class="cover-image" />
+
+		<div class="boton-next"></div>
+	</div>
+
+	<script>
+		const block = localStorage.getItem('block'),
+			lives = localStorage.getItem('lives'),
+			date = new Date(block),
+			today = new Date();
+
+		console.log((date.getDay() + 1) < today.getDay())
+
+		if (!lives)
+			localStorage.setItem('lives', 3);
+
+		if ((date.getDay() + 1) < today.getDay()) {
+			localStorage.setItem('lives', 3);
+
+			document.querySelector('.boton-next').addEventListener('click', () => {
+				window.location.href = './index276.html'
+			})
+		} else {
+			document.querySelector('.boton-next').addEventListener('click', () => {
+				window.location.href = './index276.html'
+			})
+		}
+	</script>
+</body>
+
+</html>
