@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Estructura, sesión 5 Entresto</title>
+
+		<link rel="stylesheet" href="./css/styles291.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+		<!-- Scripts -->
+		<script src="./js/jquery-3.2.1.min.js"></script>
+		<script src="./js/functions.js"></script>
+	</head>
+	<body class="ancho">
+		<div class="container">
+			<img
+				src="./imagenes/portada291.jpg"
+				alt="Portada"
+				class="cover-image" />
+
+			<a href="./index.html" class="boton-home"></a>
+			<a href="./index290.html" class="boton-atras"></a>
+			<a href="./index292.html" class="boton-next"></a>
+
+
+			<!-- Buttoms -->
+			<div class="abrir1" id="abrir1">
+				<img class="menu1" src="./imagenes/cas-1.png" alt="" />
+			</div>
+
+			<div class="abrir2" id="abrir2">
+				<img class="menu2" src="./imagenes/cas-2.png" alt="" />
+			</div>
+
+			<div class="abrir3" id="abrir3">
+				<img class="menu3" src="./imagenes/cas-3.png" alt="" />
+			</div>
+
+
+			<!--  -->
+			<div
+				class="cursor circle animate__animated animate__pulse animate__infinite">
+				<img src="./imagenes/bot-a.png" alt="" />
+			</div>
+			<div
+				class="cursor1 circle animate__animated animate__pulse animate__infinite">
+				<img src="./imagenes/bot-b.png" alt="" />
+			</div>
+
+			<div
+				class="cursor2 circle animate__animated animate__pulse animate__infinite">
+				<img src="./imagenes/bot-c.png" alt="" />
+			</div>
+
+
+			<div class="vutom-col"></div>
+		</div>
+
+		<!-- Scripts -->
+		<script src="./js/script291.js"></script>
+		<script>
+			$(document).ready(function () {
+				const slide = [
+					'slide291-1',
+					'slide291-2',
+					'slide291-3',
+				]
+				$(document).ready(function () {
+					const newSlide = slide.every((item) => {
+						if (localStorage.getItem(item) === 'true') return item
+					})
+					if (newSlide) {
+						$('.vutom-col').hide()
+					} else {
+						$('.vutom-col').show()
+					}
+
+					for (let i = 0; i < 3; i++) {
+						if (localStorage.getItem(slide[i]) === 'true') {
+							if (i === 0) {
+								$(`.cursor`).hide()
+							} else {
+								$(`.cursor${i}`).hide()
+							}
+						}
+					}
+				})
+			})
+		</script>
+	</body>
+</html>

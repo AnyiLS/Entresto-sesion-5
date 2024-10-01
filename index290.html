@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Estructura, sesión 5 Entresto</title>
+
+		<link rel="stylesheet" href="./css/styles290.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+		<!-- Scripts -->
+		<script src="./js/jquery-3.2.1.min.js"></script>
+		<script src="./js/functions.js"></script>
+	</head>
+	<body class="ancho">
+		<div class="container">
+			<img
+				src="./imagenes/portada290.webp"
+				alt="Portada"
+				class="cover-image" />
+
+			<a href="./index.html" class="boton-home"></a>
+			<a href="./index289.html" class="boton-atras"></a>
+			<a href="./index291.html" class="boton-next"></a>
+
+
+			<!-- Buttoms -->
+			<div class="abrir1" id="abrir1">
+				<img class="menu1" src="./imagenes/caso1.png" alt="" />
+			</div>
+
+			<div class="abrir2" id="abrir2">
+				<img class="menu2" src="./imagenes/caso2.png" alt="" />
+			</div>
+
+			<div class="abrir3" id="abrir3">
+				<img class="menu3" src="./imagenes/caso3.png" alt="" />
+			</div>
+
+			<div class="abrir4" id="abrir4">
+				<img class="menu4" src="./imagenes/caso4.png" alt="" />
+			</div>
+
+			<div class="abrir5" id="abrir5">
+				<img class="menu5" src="./imagenes/caso5.png" alt="" />
+			</div>
+
+
+			<!--  -->
+			<div
+				class="cursor circle animate__animated animate__pulse animate__infinite">
+				<img src="./imagenes/boton-1.png" alt="" />
+			</div>
+			<div
+				class="cursor1 circle animate__animated animate__pulse animate__infinite">
+				<img src="./imagenes/boton-2.png" alt="" />
+			</div>
+
+			<div
+				class="cursor2 circle animate__animated animate__pulse animate__infinite">
+				<img src="./imagenes/boton-3.png" alt="" />
+			</div>
+
+			<div
+				class="cursor3 circle animate__animated animate__pulse animate__infinite">
+				<img src="./imagenes/boton-4.png" alt="" />
+			</div>
+
+			<div
+				class="cursor4 circle animate__animated animate__pulse animate__infinite">
+				<img src="./imagenes/boton-5.png" alt="" />
+			</div>
+
+			<div class="vutom-col"></div>
+		</div>
+
+		<!-- Scripts -->
+		<script src="./js/script290.js"></script>
+		<script>
+			$(document).ready(function () {
+				const slide = [
+					'slide290-1',
+					'slide290-2',
+					'slide290-3',
+					'slide290-4',
+					'slide290-5',
+				]
+				$(document).ready(function () {
+					const newSlide = slide.every((item) => {
+						if (localStorage.getItem(item) === 'true') return item
+					})
+					if (newSlide) {
+						$('.vutom-col').hide()
+					} else {
+						$('.vutom-col').show()
+					}
+
+					for (let i = 0; i < 5; i++) {
+						if (localStorage.getItem(slide[i]) === 'true') {
+							if (i === 0) {
+								$(`.cursor`).hide()
+							} else {
+								$(`.cursor${i}`).hide()
+							}
+						}
+					}
+				})
+			})
+		</script>
+	</body>
+</html>
