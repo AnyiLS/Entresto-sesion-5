@@ -9,13 +9,13 @@ const handleGetResponses = () => {
         handleSetRemove()
 
         if (count === 1)
-            document.querySelector('#text-intentalo').textContent = `Has completado solo ${count} pregunta`
+            document.querySelector('#text-intentalo').textContent = `Has completado ${count} pregunta`
         else
-            document.querySelector('#text-intentalo').textContent = `Has completado solo ${count} preguntas`;
+            document.querySelector('#text-intentalo').textContent = `Has completado ${count} preguntas`;
     } else {
         document.querySelector('.felicida').style.display = 'block';
         document.querySelector('.intentelo').style.display = 'none';
-        document.querySelector('#text-felici').textContent = `Has completado solo ${count} preguntas`;
+        document.querySelector('#text-felici').textContent = `Has completado ${count} preguntas`;
     }
 }
 

@@ -43,9 +43,9 @@ $(document).ready(function () {
 
 	$('#lop3').on('click', () => {
 		$('#lop3 rect').css('fill', '#50e1d0')
-
 		const responses = JSON.parse(localStorage.getItem('response'))
 		localStorage.setItem('response', JSON.stringify([...responses, 5]))
+		sonidoexitoso()
 
 		setTimeout(() => {
 			$('.modal5').hide()
@@ -110,6 +110,7 @@ $(document).ready(function () {
 
 		const responses = JSON.parse(localStorage.getItem('response'))
 		localStorage.setItem('response', JSON.stringify([...responses, 6]))
+		sonidoexitoso()
 
 		setTimeout(() => {
 			$('.modal6').hide()
@@ -203,6 +204,7 @@ $(document).ready(function () {
 
 		const responses = JSON.parse(localStorage.getItem('response'))
 		localStorage.setItem('response', JSON.stringify([...responses, 7]))
+		sonidoexitoso()
 
 		setTimeout(() => {
 			$('.modal7').hide()
@@ -251,6 +253,7 @@ $(document).ready(function () {
 
 		const responses = JSON.parse(localStorage.getItem('response'))
 		localStorage.setItem('response', JSON.stringify([...responses, 8]))
+		sonidoexitoso()
 
 		setTimeout(() => {
 			$('.modal8').hide()
@@ -344,6 +347,7 @@ $(document).ready(function () {
 
 		const responses = JSON.parse(localStorage.getItem('response'))
 		localStorage.setItem('response', JSON.stringify([...responses, 9]))
+		sonidoexitoso()
 
 		setTimeout(() => {
 			$('.modal9').hide()

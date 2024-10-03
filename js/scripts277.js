@@ -30,6 +30,7 @@ $(document).ready(function () {
 		const response = JSON.parse(localStorage.getItem('response'))
 
 		localStorage.setItem('response', JSON.stringify([...response, 1]))
+		sonidoexitoso()
 
 		setTimeout(() => {
 			$('.modal').hide()
@@ -121,6 +122,7 @@ $(document).ready(function () {
 
 		const responses = JSON.parse(localStorage.getItem('response'))
 		localStorage.setItem('response', JSON.stringify([...responses, 2]))
+		sonidoexitoso()
 
 		setTimeout(() => {
 			$('.modal2').hide()
@@ -196,6 +198,7 @@ $(document).ready(function () {
 
 		const responses = JSON.parse(localStorage.getItem('response'))
 		localStorage.setItem('response', JSON.stringify([...responses, 3]))
+		sonidoexitoso()
 
 		setTimeout(() => {
 			$('.modal3').hide()
@@ -253,6 +256,7 @@ $(document).ready(function () {
 
 		const responses = JSON.parse(localStorage.getItem('response'))
 		localStorage.setItem('response', JSON.stringify([...responses, 4]))
+		sonidoexitoso()
 
 		setTimeout(() => {
 			$('.modal4').hide()
