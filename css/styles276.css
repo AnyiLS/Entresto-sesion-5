@@ -31,10 +31,10 @@ body {
 
 .boton-atras {
 	position: absolute;
-	width: 6%;
-	height: 10%;
-	top: 3%;
-    right: 2%;
+	width: 56%;
+    height: 17%;
+    top: 52%;
+    left: 6%;
 	cursor: pointer;
 }
 
